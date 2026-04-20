@@ -6,3 +6,7 @@ int main() {
 }
 
 /*This is a comment!*/
+/*A Multiline Comment would actually go great too!
+imagine
+
+*/
