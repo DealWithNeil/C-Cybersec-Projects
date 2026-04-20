@@ -7,6 +7,6 @@ int main() {
 
 /*This is a comment!*/
 /*A Multiline Comment would actually go great too!
-imagine
+imagine this being a comment that spans multiple lines, it would be really useful for writing documentation or explaining complex code.
 
 */
