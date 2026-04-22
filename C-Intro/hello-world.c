@@ -1,3 +1,5 @@
+/*I would like to say that i think i have done pretty well on starting with the basics of C!*/
+
 #include <stdio.h>
  int main() {
     printf("Brevity is the soul of wit. \n --Shakespeare\n");
