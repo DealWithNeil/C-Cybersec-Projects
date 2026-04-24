@@ -2,7 +2,7 @@
 
 #include <stdio.h>
  int main() {
-    printf("Brevity is the soul of wit. \n --Shakespeare\n");
+    printf ("Height: %d\n", height);
     return 0;
  }
 
