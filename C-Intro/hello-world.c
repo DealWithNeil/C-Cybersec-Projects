@@ -3,8 +3,8 @@
 #include <stdio.h>
  int main() {
    printf("hello world! \n");
-   printf("have a blessed day ahead!");
-   printf("be the best version of yourself today!");
+   printf("have a blessed day ahead! \n");
+   printf("be the best version of yourself today! \n");
     return 0;
  }
 
