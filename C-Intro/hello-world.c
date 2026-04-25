@@ -2,7 +2,7 @@
 
 #include <stdio.h>
  int main() {
-    printf ("Height: %d\n", height);
+   printf("hello world!");
     return 0;
  }
 
