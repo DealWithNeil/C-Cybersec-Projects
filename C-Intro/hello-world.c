@@ -2,7 +2,9 @@
 
 #include <stdio.h>
  int main() {
-   printf("hello world!");
+   printf("hello world! \n");
+   printf("have a blessed day ahead!");
+   printf("be the best version of yourself today!");
     return 0;
  }
 
