@@ -10,9 +10,3 @@ int main() {
 return 0;
 
 }
-
-/*This is a comment!*/
-/*A Multiline Comment would actually go great too!
-imagine this being a comment that spans multiple lines, it would be really useful for writing documentation or explaining complex code.
-
-*/
