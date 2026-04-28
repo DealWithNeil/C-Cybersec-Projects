@@ -2,22 +2,15 @@
 
 int main(void) {
 
-  int height, length, width, volume, weight; 
+  int myNum = 15;
 
-  printf("Enter the height of the box:");
-  scanf("%d", &height);
-  printf("Enter the length of the box: ");
-  scanf("%d", &length);
-  printf("Enter the width of the box: ");
-  scanf("%d", &width);
-  printf("Enter the weight of the box:");
-  scanf("%d", &weight);
+int myOtherNum = 23;
 
-  volume = height * length * width;
-  weight = (volume + 165) / 166;
+// Assign the value of myOtherNum (23) to myNum
+myNum = myOtherNum;
 
-  printf("Volume (cubic inches): %d\n", volume);
-  printf("Dimensional weight (pounds): %d\n", weight);
+// myNum is now 23 (was 15)
+printf("%d", myNum); 
   
 return 0;
 
