@@ -1,17 +1,24 @@
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
 
-  int myNum = 15;
+int height, length, width, volume, weight;
 
-int myOtherNum = 23;
+printf("Enter height of box: ");
+scanf("%d", &height);
+printf("Enter length of box: ");
+scanf("%d", &length);
+printf("Enter width of box: ");
+scanf("%d", &width);
 
-// Assign the value of myOtherNum (23) to myNum
-myNum = myOtherNum;
+volume = height * length * width;
 
-// myNum is now 23 (was 15)
-printf("%d", myNum); 
-  
+weight = (volume + 165) / 166;
+
+printf("Volume (cubic inches): %d\n", volume);
+printf("Dimensional weight (pounds): %d\n", weight);
+
 return 0;
 
 }
