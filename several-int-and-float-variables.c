@@ -2,11 +2,14 @@
 
 int main (void) {
 
-    int x = 10;
-    float y = 20;
-    int z = 6;
-    float a = 7;
+    int i, j;
+    float x, y;
 
-    printf("x = %d, y = %.2f, z = %d, a = %.2f\n", x, y, z, a);
+    i = 10;
+    j = 20;
+    x = 43.2892f;
+    y = 5527.0f;
+
+    printf("i = %d, j = %d, x = %f, y = %f\n", i, j, x, y);
     return 0;
 }
