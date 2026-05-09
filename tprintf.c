@@ -1,15 +1,25 @@
-/*Program that accepts a date from a user*/
+/*Write a program that formats product information entered by the user. The item number and date should be left justified; the unit price should be right justified.
+Allow dollar amounts up to $9999.99.*/
 
 #include <stdio.h>
 
-int main (void) {
+int main(void) {
+    int item_number;
+    int day, month, year;
+    double unit_price;
 
-     int day, month, year;
+    printf("Enter item number: ");
+    scanf("%d", &item_number);
 
-     printf("Enter a date (mm/dd/yyyy):)");
-     scanf("%d/%d/%d", &month, &day, &year);
+    printf("Enter date (mm/dd/yyyy): ");
+    scanf("%d/%d/%d", &month, &day, &year);
 
-     printf("You entered: %02d/%02d/%04d\n", month, day, year);
+    printf("Enter unit price: ");
+    scanf("%lf", &unit_price);
 
-     return 0;
+    printf("Item Number: %d\n", item_number);
+    printf("Date: %02d/%02d/%04d\n", month, day, year);
+    printf("Unit Price: $%6.2f\n", unit_price);
+
+    return 0;
 }
