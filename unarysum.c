@@ -1,16 +1,11 @@
-/*Applying simple assignment operators*/
+/*Show the output produced by each of the following program fragments. Assume that i, j,
+and k are int variables.*/
 
 #include <stdio.h>
 
 int main () {
-
-  int i = 5;            /* i is now 5  */
-  int j = i;            /* j is now 5  */
-  int k = 10 * i + j;   /* k is now 55 */
-  
-  printf("i = %d\n", i);
-  printf("j = %d\n", j);
-  printf("k = %d\n", k);
-
-  return 0;
+    int i = 5;
+    int j = 3;
+    printf("%d %d", i / j, i % j);
+    return 0;
 }
