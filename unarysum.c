@@ -1,21 +1,16 @@
-/* Computes a Universal Product Code check digit */
+/* Show the output produced by each of the following program fragments. Assume that i, j,
+and k are int variables. */
 
 #include <stdio.h>
 
 int main (void) {
 
-    int digit, sum = 0;
-    
-    printf ("Enter the first 11 digits of a UPC: ");
+    int i = 1, j = 2, k = 3;
 
-    for (int i = 0; i < 11; i++) {
-        scanf ("%1d", &digit);
-        if (i % 2 == 0) {
-            sum += digit * 3;
-        } else {
-            sum += digit;
-        }
-    }
-    
+    printf("%d\n", -i); /* Output: -1 */
+    printf("%d\n", +j); /* Output: 2 */
+    printf("%d\n", -k); /* Output: -3 */
+
     return 0;
+
 }
