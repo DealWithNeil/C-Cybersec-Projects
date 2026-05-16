@@ -3,14 +3,11 @@ and k are int variables. */
 
 #include <stdio.h>
 
-int main (void) {
+    int main (void) {
 
-    int i = 1, j = 2, k = 3;
+        int i = 2, j = 3;
+        printf("%d", (i + 10) % j);
 
-    printf("%d\n", -i); /* Output: -1 */
-    printf("%d\n", +j); /* Output: 2 */
-    printf("%d\n", -k); /* Output: -3 */
+        return 0;
 
-    return 0;
-
-}
+    }
