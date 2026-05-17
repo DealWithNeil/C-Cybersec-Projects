@@ -1,12 +1,14 @@
-/* Show the output produced by each of the following program fragments. Assume that i, j,
-and k are int variables. */
+/*Often the expression in an if statement will test whether a variable falls
+within a range of values.  */
 
 #include <stdio.h>
 
     int main (void) {
 
-        int i = 2, j = 3;
-        printf("%d", (i + 10) % j);
+    int x = 5;
+
+    if (x > 0 && x < 10) {
+        printf("x is a positive single digit number.\n");
 
         return 0;
 
