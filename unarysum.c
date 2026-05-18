@@ -1,15 +1,20 @@
-/*Often the expression in an if statement will test whether a variable falls
-within a range of values.  */
+/*Displaying if-else statements  */
 
 #include <stdio.h>
 
-    int main (void) {
+int main () {
 
-    int x = 5;
-
-    if (x > 0 && x < 10) {
-        printf("x is a positive single digit number.\n");
-
-        return 0;
-
-    }
+    int i = 10, j = 20, k = 15, max;
+        if (i > j)
+        if (i > k) 
+        max = i;
+        else 
+        max = k;
+        else
+        if (j > k) 
+        max = j;
+        else 
+        max = k;
+    printf("The maximum value is %d\n", max);
+    return 0;
+}
