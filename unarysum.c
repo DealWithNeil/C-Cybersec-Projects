@@ -1,20 +1,18 @@
-/*Displaying if-else statements  */
+/*Displaying a nested if-else statement with unary operators */
 
 #include <stdio.h>
 
-int main () {
+int main() {
+    int a = 5, b = 10;
 
-    int i = 10, j = 20, k = 15, max;
-        if (i > j)
-        if (i > k) 
-        max = i;
-        else 
-        max = k;
-        else
-        if (j > k) 
-        max = j;
-        else 
-        max = k;
-    printf("The maximum value is %d\n", max);
+    if (a > b) {
+        printf("a is greater than b\n");
+    } else if (a < b) {
+        printf("a is less than b\n");
+    } else {
+        printf("a is equal to b\n");
+    }
+
     return 0;
 }
+
