@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-    int maint (void) {
+    int main (void) {
 
             int a, b, c;
     
