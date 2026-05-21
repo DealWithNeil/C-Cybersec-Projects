@@ -16,7 +16,6 @@
             printf("a is equal to b\n");
         }
 
-
         return 0;
     }
 
