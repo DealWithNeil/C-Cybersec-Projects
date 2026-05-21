@@ -1,28 +1,21 @@
-/*Displaying a nested if-else statement with multiple conditions */
+/*Displaying a nested if-else statement with two conditions */
 
 
-#include <stdio.h>
+#include <stdio.h> 
 
-    int main (void) {
+    int main () {
 
-            int a, b, c;
-    
-            printf("Enter three integers: ");
-            scanf("%d %d %d", &a, &b, &c);
-    
-            if (a > b) {
-                if (a > c) {
-                    printf("%d is the largest number.\n", a);
-                } else {
-                    printf("%d is the largest number.\n", c);
-                }
-            } else {
-                if (b > c) {
-                    printf("%d is the largest number.\n", b);
-                } else {
-                    printf("%d is the largest number.\n", c);
-                }
-            }
+        int a = 10, b = 20;
+        if (a > b) {
+            printf("a is greater than b\n");
+        }
+        else if (a < b) {
+            printf("a is less than b\n");
+        }
+        else {
+            printf("a is equal to b\n");
+        }
+
 
         return 0;
     }
