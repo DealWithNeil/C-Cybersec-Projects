@@ -1,23 +1,24 @@
-/*Displaying a multiple nested if-else */
-
+/*Print multiple nested if-else statements with multiple conditions*/
 
 #include <stdio.h>
 
-    int main () {
+int main () {
 
-       int i = 10, j = 20, k = 30, max;
-       if (i > j) {
-  if (i > k) 
-    max = i;
-  else 
-    max = k;
-} else {
-  if (j > k) 
-    max = j;
-  else 
-    max = k;
-}
+    int a = 10, b = 20, c = 30;
 
-
-        return 0;
+    if (a > b) {
+        if (a > c) {
+            printf("a is the greatest number.\n");
+        } else {
+            printf("c is the greatest number.\n");
+        }
+    } else {
+        if (b > c) {
+            printf("b is the greatest number.\n");
+        } else {
+            printf("c is the greatest number.\n");
+        }
     }
+
+  return 0;
+}
