@@ -1,17 +1,20 @@
-/*Print a basic while loop program with one arithmethic operation*/
+/*Print a table of squares*/
+
 
 #include <stdio.h>
 
-int main () {
+int main (void) {
 
-    int i = 0;
-
-    while (i < 5) {
-        printf("The value of i is: %d\n", i);
-        i++;
-    }
-
-
+  int i, n;
+  
+  printf("This program prints a table of squares.\n");
+  printf("Enter number of entries in table: ");
+  scanf("%d", &n);
+  
+  i = 1;
+  while (i <= n) {
+    printf("%10d%10d\n", i, i * i);
+    i++;
+  }
   return 0;
 }
-
