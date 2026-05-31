@@ -1,19 +1,17 @@
-/*Basic Countdown Program with many funny messages*/
+/*Sums a series of numbers*/
 
 #include <stdio.h>
-#include <unistd.h>
-
-int main() {
-    int count = 10;
-
-    while (count > 0) {
-        printf("%d...\n", count);
-        sleep(1); // Sleep for 1 second
-        count--;
-    }
-
-    printf("Blast off! 🚀\n");
-    printf("Hope you enjoyed the countdown! 🎉\n");
-    return 0;
+int main(void)
+{
+  int n, sum = 0;
+  printf("This program sums a series of integers.\n");
+  printf("Enter integers (0 to terminate): ");
+  scanf("%d", &n);
+  while (n != 0) {
+    sum += n;
+    scanf("%d", &n);
+  }
+  printf("The sum is: %d\n", sum);
+  return 0;
 }
 
