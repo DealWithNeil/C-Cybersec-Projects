@@ -1,20 +1,17 @@
-/* Condense the dweight.c program by (1) replacing the assignments to height,
-length, and width with initializers and (2) removing the weight variable, instead 
-calculating (volume + 165) / 166 within the last printf. /*/
+/*Sums a series of numbers*/
 
 #include <stdio.h>
-
-int main(void) {
-
-  int height = 8;
-  int length = 12;
-  int width = 10;
-  int volume;
-
-  volume = length * width * height;
-
-  printf("Dimensions: %dx%dx%d\n", length, width, height);
-  printf("Volume (cubic inches): %d\n", volume);
-  printf("Dimensional weight (pounds): %d\n", (volume + 165) / 166);
+int main(void)
+{
+  int n, sum = 0;
+  printf("This program sums a series of integers.\n");
+  printf("Enter integers (0 to terminate): ");
+  scanf("%d", &n);
+  while (n != 0) {
+    sum += n;
+    scanf("%d", &n);
+  }
+  printf("The sum is: %d\n", sum);
   return 0;
 }
+
