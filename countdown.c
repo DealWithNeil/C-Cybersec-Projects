@@ -1,17 +1,14 @@
-/*Sums a series of numbers*/
-
+/* Calculates the number of digits in an integer */
 #include <stdio.h>
 int main(void)
 {
-  int n, sum = 0;
-  printf("This program sums a series of integers.\n");
-  printf("Enter integers (0 to terminate): ");
+  int digits = 0, n;
+  printf("Enter a nonnegative integer: ");
   scanf("%d", &n);
-  while (n != 0) {
-    sum += n;
-    scanf("%d", &n);
-  }
-  printf("The sum is: %d\n", sum);
+  do {
+    n /= 10;
+    digits++;
+  } while (n > 0);
+  printf("The number has %d digit(s).\n", digits);
   return 0;
 }
-
