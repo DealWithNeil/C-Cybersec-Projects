@@ -1,17 +1,17 @@
-/* Prints a for loop with continue statement */
+/*Breaking a for loop for debugging a simple program*/
+
 #include <stdio.h>
-int main(void)
-{
-  int n = 0, i, sum = 0;
-  /* 6.4    Exiting from a Loop
-     113 */
-  while (n < 10) {
-    scanf("%d", &i);
-  if (i == 0)
-    continue;
-  sum += i;
-  n++;
-  /* continue jumps to here */
-}
+
+int main (void) {
+
+    int i;
+
+    for (i = 0; i < 10; i++) {
+        printf("%d\n", i);
+        if (i == 5) {
+            break; /*breaks the loop when i is 5*/
+        }
+    }
+
   return 0;
 }
