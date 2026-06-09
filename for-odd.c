@@ -1,17 +1,12 @@
-/*Breaking a for loop for debugging a simple program*/
+/*Display a basic for loop with go to*/
 
 #include <stdio.h>
 
 int main (void) {
 
     int i;
-
     for (i = 0; i < 10; i++) {
-        printf("%d\n", i);
-        if (i == 5) {
-            break; /*breaks the loop when i is 5*/
-        }
+        printf("%d ", i);
     }
-
-  return 0;
+    return 0;
 }
