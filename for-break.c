@@ -1,16 +1,17 @@
-/*Display a simple program with the for loop and break statement*/
+/*Display a simple program with the for loop and multiple break statements*/
 
 #include<stdio.h>
 
-int main(void)
+int main()
 {
-  int n;    
-for (;;) {
-  printf("Enter a number (enter 0 to stop): ");
-  scanf("%d", &n);
-  if (n == 0)
-    break;
-  printf("%d cubed is %d\n", n, n * n * n);
-}
+    int i;
+    for(i=0; i<10; i++)
+    {
+        if(i==3)
+        {
+            break;
+        }
+        printf("%d ",i);
+    }
 return 0;
 }
