@@ -1,12 +1,13 @@
 /* What output does the following program fragment produce? */
+#include <stdio.h>
 
- #include <stdio.h>
+int main (void) {
 
- int main(void) {
-int i = 1;
-while (i <= 128) {
+ int i = 9384;
+do {
   printf("%d ", i);
-  i *= 2;
-}
-return 0;
+  i /= 10;
+} while (i > 0);
+{
+  return 0;
 }
