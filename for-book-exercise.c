@@ -1,10 +1,11 @@
-/*What output does the following for statement produce?*/
+/*Which one of the following statements is not equivalent to the other two (assuming that the
+loop bodies are the same)?*/
 
 #include <stdio.h>
 
 int main (void) {
 int i, j;
-for (i = 5, j = i - 1; i > 0, j > 0; --i, j = i - 1)
+ for (i = 0; i < 10; i++)
   printf("%d ", i);
 
     return 0;
