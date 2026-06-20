@@ -5,7 +5,7 @@ loop bodies are the same)?*/
 
 int main (void) {
 int i, j;
- for (i = 0; i < 10; i++)
+ for (i = 0; i < 40; i++)
   printf("%d ", i);
 
     return 0;
