@@ -4,9 +4,8 @@ loop bodies are the same)?*/
 #include <stdio.h>
 
 int main (void) {
-int i, j;
- for (i = 0; i < 1000; i++)
-  printf("%d ", i);
+for (i = 10; i >= 1; i /= 2)
+  printf("%d ", i++);
 
     return 0;
 }
