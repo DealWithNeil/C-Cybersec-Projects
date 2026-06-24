@@ -1,4 +1,4 @@
-/*What output does the following for statement produce??*/
+/*What output does the following for statement produce and put a break in the loop??*/
 
 #include <stdio.h>
 
