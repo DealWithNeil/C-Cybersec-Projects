@@ -4,7 +4,7 @@
 
 int main (void) {
 int i;
-for (i = 10; i >= 1; i /= 2) {
+for (i = 20; i >= 1; i /= 2) {
   printf("%d ", i);
   if (i == 1) {
     break;
