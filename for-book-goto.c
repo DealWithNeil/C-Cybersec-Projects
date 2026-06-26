@@ -11,7 +11,7 @@ int main (void) {
         printf("%d ", i);
         skip:; // Label to jump to
     }
-    
+    printf("\n");
 
     return 0;
 }
