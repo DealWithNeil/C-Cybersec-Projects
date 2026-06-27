@@ -1,4 +1,4 @@
-/*Show how to replace a continue statement by an equivalent goto statement.*/
+/*Show how to replace a continue statement by an equivalent goto statement, also display a sample break statement.*/
 
 #include <stdio.h>
 
