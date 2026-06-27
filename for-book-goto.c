@@ -13,5 +13,12 @@ int main (void) {
     }
     printf("\n");
 
+    for (int j = 1; j <= 10; j++) {
+        if (j == 5) {
+            break; // Sample break statement
+        }
+        printf("%d ", j);
+    }
+
     return 0;
 }
