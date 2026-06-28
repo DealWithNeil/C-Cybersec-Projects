@@ -1,4 +1,4 @@
-/*Show how to replace a continue statement by an equivalent goto statement, also display a sample break statement.*/
+/*Show how to replace a continue statement by an equivalent goto statement, also display a multiple break statements.*/
 
 #include <stdio.h>
 
@@ -15,10 +15,12 @@ int main (void) {
 
     for (int j = 1; j <= 10; j++) {
         if (j == 5) {
-            break; // Sample break statement
+            goto break_out; // Replace break with goto
         }
         printf("%d ", j);
     }
 
+    break_out:; // Label to jump to
+    printf("\n");
     return 0;
 }
