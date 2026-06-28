@@ -20,7 +20,7 @@ int main (void) {
         printf("%d ", j);
     }
 
-    break_out:; // Label to jump to
+    break_out:; // Label to jump to after breaking out of the loop
     printf("\n");
     return 0;
 }
