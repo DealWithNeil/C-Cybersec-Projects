@@ -1,4 +1,4 @@
-/*Show how to replace a continue statement by an equivalent goto statement, also display a multiple break statements.*/
+/*What output does the following program fragment produce?*/
 
 #include <stdio.h>
 
