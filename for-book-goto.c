@@ -1,4 +1,4 @@
-/*What output does the following program fragment produce?*/
+/*Find the error in the following program fragment and fix it.*/
 
 #include <stdio.h>
 
