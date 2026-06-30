@@ -3,18 +3,9 @@
 #include <stdio.h>
 
 int main(void) {
-    int sum = 0;
-    int i;
-    
-    for (i = 0; i < 10; i++) {
-        // Writing (i % 2 != 0) makes it clear we are skipping odd numbers
-        if (i % 2 != 0) {
-            continue;
-        }
-        sum += i;
-    } 
-    
-    printf("%d\n", sum);
-
+    int n = 10; // Example value for n
+    if (n % 2 == 0) {
+        printf("n is even\n");
+    }
     return 0;
 }
