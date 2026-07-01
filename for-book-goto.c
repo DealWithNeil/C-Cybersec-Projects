@@ -1,11 +1,9 @@
-/*Find the error in the following program fragment and fix it.*/
+/*Write a program that finds the largest in a series of numbers entered by the user. The pro
+gram must prompt the user to enter numbers one by one. When the user enters 0 or a nega
+tive number, the program must display the largest nonnegative number entered:*/
 
 #include <stdio.h>
 
-int main(void) {
-    int n = 10; // Example value for n
-    if (n % 2 == 0) {
-        printf("n is even\n");
-    }
+
     return 0;
 }
