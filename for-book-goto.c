@@ -1,25 +1,25 @@
-/*Write a program that finds the largest in a series of numbers entered by the user. The pro
-gram must prompt the user to enter numbers one by one. When the user enters 0 or a nega
-tive number, the program must display the largest nonnegative number entered:*/
+/*Write a program that asks the user to enter two integers, then calculates and displays their
+greatest common divisor (GCD)*/
 
 #include <stdio.h>
 
 int main() {
-    int number, largest = -1;
-    printf("Enter numbers one by one (enter 0 or a negative number to stop):\n");
-    while (1) {
-        scanf("%d", &number);
-        if (number <= 0) {
-            break;
-        }
-        if (number > largest) {
-            largest = number;
-        }
+    int a, b, gcd;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    
+    // Ensure a and b are positive
+    if (a < 0) a = -a;
+    if (b < 0) b = -b;
+    
+    // Calculate GCD using Euclidean algorithm
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
     }
-    if (largest >= 0) {
-        printf("The largest nonnegative number entered is: %d\n", largest);
-    } else {
-        printf("No nonnegative number was entered.\n");
-    }       
+    gcd = a;
+    
+    printf("The GCD of the two numbers is: %d\n", gcd);
     return 0;
 }
