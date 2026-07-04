@@ -2,7 +2,7 @@
 terms*/
 
 #include <stdio.h>
-#include <stdlib.h> // For abs() or custom checks
+
 
 int main() {
     
