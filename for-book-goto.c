@@ -1,5 +1,5 @@
-/*Write a program that asks the user to enter a fraction, then reduces the fraction to lowest
-terms*/
+/* Write a program that prompts the user to enter a number n, then prints all even squares
+between 1 and n*/
 
 #include <stdio.h>
 
