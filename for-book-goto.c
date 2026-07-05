@@ -1,5 +1,5 @@
-/* Write a program that prompts the user to enter a number n, then prints all even squares
-between 1 and n*/
+/*  Write a program that prints a one-month calendar. The user specifies the number of days in
+the month and the day of the week on which the month begins*/
 
 #include <stdio.h>
 
