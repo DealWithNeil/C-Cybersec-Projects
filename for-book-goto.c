@@ -4,6 +4,8 @@ Write a program that approximates e by computing the value of
 1 + 1/1! + 1/2! + 1/3! + … + 1/n!
 where n is an integer entered by the user.*/
 
+/*Modify the program so that the program continues adding terms until the current term becomes less than ε, where ε is a small (floating-point) number entered by the user.
+*/
 #include <stdio.h>
 
 int main() {
