@@ -1,18 +1,22 @@
-
-
-/*Modify the program so that the program continues adding terms until the current term becomes less than ε, where ε is a small (floating-point) number entered by the user.
-*/
+/*Modify the block of code into a basic example for short ints and ints and print the output*/
 
 #include <stdio.h>
 
 int main() {
 
-short int
-unsigned short int
-int
-unsigned int
-long int
-unsigned long int
+short int a = 5;
+unsigned short int b = 10;
+int c = 15;
+unsigned int d = 20;
+long int e = 25;
+unsigned long int f = 30;  
+
+    printf("short int a = %d\n", a);
+    printf("unsigned short int b = %u\n", b);
+    printf("int c = %d\n", c);
+    printf("unsigned int d = %u\n", d);
+    printf("long int e = %ld\n", e);
+    printf("unsigned long int f = %lu\n", f);
 
     return 0;
 }
