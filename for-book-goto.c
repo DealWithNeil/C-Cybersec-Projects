@@ -4,9 +4,10 @@
 
 int main() {
     
-short s;
-scanf("%hd", &s);
-printf("%hd", s);
+int i;
+scanf("%d", &i);
+printf("%d", i);
+
 
     return 0;
 }
