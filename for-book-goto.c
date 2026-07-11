@@ -5,8 +5,10 @@
 int main() {
     
 int i;
+short s;
 scanf("%d", &i);
-printf("%d", i);
+scanf("%hd", &s);
+printf("%d %hd", i, s);
 
     return 0;
 }
