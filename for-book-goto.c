@@ -5,11 +5,8 @@ zero*/
 
 int main() {
     
-int i;
-short s;
-scanf("%d", &i);
-scanf("%hd", &s);
-printf("%d %hd", i, s);
+int decimalConstant = 12345; // Valid decimal constant
+printf("Decimal constant: %d\n", decimalConstant);
 
     return 0;
 }
