@@ -1,4 +1,5 @@
-/*Modify the block of code into a basic example for integers and short integers*/
+/*Display a basic program for this: Decimal constants contain digits between 0 and 9, but must not begin with a
+zero*/
 
 #include <stdio.h>
 
