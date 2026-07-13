@@ -7,8 +7,6 @@ zero:
 
 int main() {
     
-int decimalConstant = 12345; // Valid decimal constant
-printf("Decimal constant: %d\n", decimalConstant);
 
     return 0;
 }
