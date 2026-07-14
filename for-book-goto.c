@@ -1,6 +1,6 @@
-/*Display a basic program for this: DOctal constants contain only digits between 0 and 7, and must begin with a
-zero:
-017  0377  077777*/
+/*Hexadecimal constants contain digits between 0 and 9 and letters between a
+and f, and always begin with 0x:
+0xf  0xff  0x7fff*/
 
 #include <stdio.h>
 
