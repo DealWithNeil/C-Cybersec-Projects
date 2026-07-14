@@ -5,13 +5,14 @@ and f, and always begin with 0x:
 #include <stdio.h>
 
 int main() {
-    int octalConstant1 = 017;   // Valid octal constant
-    int octalConstant2 = 0377;  // Valid octal constant
-    int octalConstant3 = 077777; // Valid octal constant
+    
+    int hexConstant1 = 0xf;    // Valid hexadecimal constant
+    int hexConstant2 = 0xff;   // Valid hexadecimal constant
+    int hexConstant3 = 0x7fff; // Valid hexadecimal constant
 
-    printf("Octal constant 1: %d\n", octalConstant1);
-    printf("Octal constant 2: %d\n", octalConstant2);
-    printf("Octal constant 3: %d\n", octalConstant3);
+    printf("Hexadecimal constant 1: %d\n", hexConstant1);
+    printf("Hexadecimal constant 2: %d\n", hexConstant2);
+    printf("Hexadecimal constant 3: %d\n", hexConstant3);
 
     return 0;
 }
