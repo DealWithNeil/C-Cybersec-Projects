@@ -1,6 +1,8 @@
-/*Hexadecimal constants contain digits between 0 and 9 and letters between a
-and f, and always begin with 0x:
-0xf  0xff  0x7fff*/
+/*print a basic program for this example: 
+
+short s;
+scanf("%hd", &s);
+printf("%hd", s);*/
 
 #include <stdio.h>
 
