@@ -1,4 +1,4 @@
-/*print a basic program for this example: 
+/*print a basic program for this example and make an output for it: 
 
 short s;
 scanf("%hd", &s);
