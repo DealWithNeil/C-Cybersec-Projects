@@ -1,9 +1,4 @@
-/*print a basic program for this example and make an output for it: 
-
-long l;
-scanf("%ld", &l);
-printf("%ld", l);
-*/
+/* Sums a series of numbers (using long variables) */
 
 #include <stdio.h>
 
