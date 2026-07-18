@@ -1,18 +1,18 @@
-/* Sums a series of numbers (using long variables) */
+/*Give an example for this and print it: When reading a value of type double, put the letter l in front of e, f, or g:*/
 
 #include <stdio.h>
 
 int main(void)
 {
-  long n, sum = 0;
-  printf("This program sums a series of integers.\n");
-   printf("Enter integers (0 to terminate): ");
-  scanf("%ld", &n);
+  double n, sum = 0;
+  printf("This program sums a series of doubles.\n");
+  printf("Enter doubles (0 to terminate): ");
+  scanf("%lf", &n);
   while (n != 0) {
     sum += n;
-    scanf("%ld", &n);
+    scanf("%lf", &n);
   }
-  printf("The sum is: %ld\n", sum);
+  printf("The sum is: %lf\n", sum);
 
     return 0;
 }
