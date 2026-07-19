@@ -8,15 +8,16 @@ ch = ' ';
 
 int main(void)
 {
-  double n, sum = 0;
-  printf("This program sums a series of doubles.\n");
-  printf("Enter doubles (0 to terminate): ");
-  scanf("%lf", &n);
-  while (n != 0) {
-    sum += n;
-    scanf("%lf", &n);
-  }
-  printf("The sum is: %lf\n", sum);
+    char ch;
+    ch = 'a';
+    printf("ch = %c\n", ch);
+    ch = 'A';
+    printf("ch = %c\n", ch);
+    ch = '0';
+    printf("ch = %c\n", ch);
+    ch = ' ';
+    printf("ch = %c\n", ch);
+    
 
     return 0;
 }
