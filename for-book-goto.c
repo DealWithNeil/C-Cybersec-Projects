@@ -1,5 +1,9 @@
-/*Give an example for this and print it: When reading a value of type double, put the letter l in front of e, f, or g:*/
-
+/*Give an example for this and print it: char ch;
+ch = 'a';   
+ch = 'A';   
+ch = '0';   
+ch = ' ';   
+*/
 #include <stdio.h>
 
 int main(void)
