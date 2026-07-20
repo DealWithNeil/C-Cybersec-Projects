@@ -10,14 +10,13 @@ int main(void)
 {
     char ch;
     ch = 'a';
-    printf("ch = %c\n", ch);
+    printf("The character is: %c\n", ch);
     ch = 'A';
-    printf("ch = %c\n", ch);
+    printf("The character is: %c\n", ch);
     ch = '0';
-    printf("ch = %c\n", ch);
+    printf("The character is: %c\n", ch);
     ch = ' ';
-    printf("ch = %c\n", ch);
-    
+    printf("The character is: %c\n", ch);
 
     return 0;
 }
