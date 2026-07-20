@@ -1,4 +1,4 @@
-/*Give an example for this and print it: char ch;
+/*Modify this program and give another example then print it: char ch;
 ch = 'a';   
 ch = 'A';   
 ch = '0';   
