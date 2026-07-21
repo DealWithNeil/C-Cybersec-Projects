@@ -1,8 +1,9 @@
 /*Modify this program and give another example then print it: char ch;
-ch = 'a';   
-ch = 'A';   
-ch = '0';   
-ch = ' ';   
+int i;
+i = 'a';       
+ch = 65;       
+ch = ch + 1;   
+ch++;   
 */
 #include <stdio.h>
 
