@@ -1,6 +1,5 @@
-/*Display a simple program for this and print it:  Unsigned integer types, both standard (unsigned char, unsigned
-short int, unsigned int, unsigned long int, unsigned
-long long int, _Bool) and extended*/
+/*Display a simple program for this and print it:  Complex types (float _Complex, double _Complex, long dou
+ble _Complex)*/
 
 #include <stdio.h>
 
