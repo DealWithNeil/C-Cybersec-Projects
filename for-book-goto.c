@@ -5,13 +5,10 @@ ble _Complex)*/
 
 int main(void)
 {
-    printf("Unsigned integer types:\n");
-    printf("unsigned char: %zu bytes\n", sizeof(unsigned char));
-    printf("unsigned short int: %zu bytes\n", sizeof(unsigned short int));
-    printf("unsigned int: %zu bytes\n", sizeof(unsigned int));
-    printf("unsigned long int: %zu bytes\n", sizeof(unsigned long int));
-    printf("unsigned long long int: %zu bytes\n", sizeof(unsigned long long int));
-    printf("_Bool: %zu bytes\n", sizeof(_Bool));
+    printf("Complex types in C17:\n");
+    printf("float _Complex: %zu bytes\n", sizeof(float _Complex));
+    printf("double _Complex: %zu bytes\n", sizeof(double _Complex));
+    printf("long double _Complex: %zu bytes\n", sizeof(long double _Complex));
 
     return 0;
 }
