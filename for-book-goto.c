@@ -1,6 +1,5 @@
-/*Display a simple program for this and print it:  Complex types (float _Complex, double _Complex, long dou
-ble _Complex)*/
-
+/*Display a simple program for this and print it:  CReal floating types (float, double, long double)
+and Complex floating types (float _Complex, double _Complex, long double _Complex)*/
 #include <stdio.h>
 
 int main(void)
