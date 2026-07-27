@@ -6,6 +6,10 @@ unsigned character, so its maximum value is normally 377 octal.)*/
 
 int main(void)
 {
-
+    printf("Octal escape sequences:\n");
+    printf("This is an octal escape sequence: \101\n"); // Represents 'A'
+    printf("This is another octal escape sequence: \142\n"); // Represents 'b'
+    printf("This is a third octal escape sequence: \143\n"); // Represents 'c'
+    
     return 0;
 }
