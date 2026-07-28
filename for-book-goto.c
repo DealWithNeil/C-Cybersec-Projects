@@ -5,10 +5,12 @@
 
 int main(void)
 {
-    printf("Octal escape sequences:\n");
-    printf("This is an octal escape sequence: \101\n"); // Represents 'A'
-    printf("This is another octal escape sequence: \142\n"); // Represents 'b'
-    printf("This is a third octal escape sequence: \143\n"); // Represents 'c'
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    if ('a' <= ch && ch <= 'z')
+        ch = ch - 'a' + 'A';
+    printf("The uppercase character is: %c\n", ch);
     
     return 0;
 }
