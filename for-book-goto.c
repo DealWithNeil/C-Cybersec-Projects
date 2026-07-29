@@ -1,5 +1,4 @@
-/*Display a simple program for this and print it: if ('a' <= ch && ch <= 'z')
-  ch = ch - 'a' + 'A';*/
+/*Display a simple program for this and print it: ch = getchar();*/
 
 #include <stdio.h>
 
