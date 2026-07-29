@@ -4,12 +4,10 @@
 
 int main(void)
 {
-    char ch;
+    int ch;
     printf("Enter a character: ");
-    scanf("%c", &ch);
-    if ('a' <= ch && ch <= 'z')
-        ch = ch - 'a' + 'A';
-    printf("The uppercase character is: %c\n", ch);
+    ch = getchar();
+    printf("You entered: %c\n", ch);
     
     return 0;
 }
