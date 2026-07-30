@@ -5,9 +5,8 @@
 int main(void)
 {
     int ch;
-    printf("Enter a character: ");
-    ch = getchar();
-    printf("You entered: %c\n", ch);
+    while ((ch = getchar()) == ' ')
+        ;
     
     return 0;
 }
