@@ -1,4 +1,4 @@
-/*Display a simple program for this and print it: ch = getchar();*/
+/*Display a simple program for this and print it: while ((ch = getchar()) == ' ')*/
 
 #include <stdio.h>
 
