@@ -1,4 +1,4 @@
-/* Determines the length of a message*/
+/* Determines the length of a message part 2*/
 
 #include <stdio.h>
 
@@ -9,7 +9,7 @@ int main(void)
   while (getchar() != '\n')
     len++;
   printf("Your message was %d character(s) long.\n", len);
-  
+
   return 0;
   
 }
