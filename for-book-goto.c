@@ -1,15 +1,13 @@
-/* Display a type conversion example for the whole program*/
+/* Display a type conversion example for the whole program and print it.*/
 
 #include <stdio.h>
 
 int main(void)
 {
-     int len = 0;
-  printf("Enter a message: ");
-  while (getchar() != '\n')
-    len++;
-  printf("Your message was %d character(s) long.\n", len);
+  
+  int x = 5;
+  double y = 2.5;
+  double result = x + y; // Implicit type conversion from int to double
 
   return 0;
-  
 }
