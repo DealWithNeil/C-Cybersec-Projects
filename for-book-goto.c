@@ -1,4 +1,4 @@
-/* Determines the length of a message part 2*/
+/* Display a type conversion example for the whole program*/
 
 #include <stdio.h>
 
