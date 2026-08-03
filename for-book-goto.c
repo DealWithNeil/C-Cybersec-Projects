@@ -1,4 +1,4 @@
-/* Display a type conversion example for the whole program and print it.*/
+/* Display a basic arithmetic operation and print multiple lines of it.*/
 
 #include <stdio.h>
 
