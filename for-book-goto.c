@@ -4,11 +4,18 @@
 
 int main(void)
 {
-  printf("Type Conversion Example\n");
-  int x = 5;
-  double y = 2.5;
-  double result = x + y; // Implicit type conversion from int to double
-  printf("Result: %f\n", result); 
+    int a = 5;
+    int b = 3;
+    int sum = a + b;
 
-  return 0;
+    printf("The sum of %d and %d is: %d\n", a, b, sum);
+    printf("This is a simple arithmetic operation.\n");
+    printf("You can perform addition, subtraction, multiplication, and division.\n");
+    printf("For example:\n");
+    printf("%d + %d = %d\n", a, b, sum);
+    printf("%d - %d = %d\n", a, b, a - b);
+    printf("%d * %d = %d\n", a, b, a * b);
+    printf("%d / %d = %.2f\n", a, b, (float)a / b);
+    
+    return 0;
 }
