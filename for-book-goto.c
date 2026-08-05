@@ -4,12 +4,14 @@
 
 int main(void)
 {
-    // Displaying a long basic arithmetic operation
-    printf("Performing a long basic arithmetic operation:\n");
-    printf("  12345 + 67890 = %d\n", 12345 + 67890);
-    printf("  54321 - 12345 = %d\n", 54321 - 12345);
-    printf("  98765 * 43210 = %d\n", 98765 * 43210);
-    printf("  100000 / 25 = %d\n", 100000 / 25);
+    
+char c;
+int i;
+float f;
+double d;
+i = c;   /* c is converted to int   */
+f = i;   /* i is converted to float */
+d = f;   /* f is converted to double */
     
     return 0;
 }
