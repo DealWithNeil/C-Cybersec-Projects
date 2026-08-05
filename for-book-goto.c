@@ -1,4 +1,4 @@
-/* Modify the code to display a long basic arithmetic operation and print multiple lines of it.*/
+/* Print the values of variables.*/
 
 #include <stdio.h>
 
