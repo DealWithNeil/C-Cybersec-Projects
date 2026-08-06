@@ -1,4 +1,4 @@
-/* Print the values of variables.*/
+/* Display and print a basic cast expression.*/
 
 #include <stdio.h>
 
