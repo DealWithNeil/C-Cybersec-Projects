@@ -5,8 +5,13 @@
 int main(void)
 {
     int i = 10;
-    printf("i = %d\n", i);
+    double d = 3.14;
+    char c = 'A';
 
-    printf("i = %d\n", (int)i);
+    // Multiple cast expression
+    double result = (double)(i + (int)d + (int)c);
+
+    printf("Result of multiple cast expression: %f\n", result);
+
     return 0;
 }
