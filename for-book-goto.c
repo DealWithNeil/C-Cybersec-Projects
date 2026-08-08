@@ -1,4 +1,4 @@
-/* Display and print a basic multiple cast expression.*/
+/* Display and print a basic type definition program.*/
 
 #include <stdio.h>
 
