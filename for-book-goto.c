@@ -1,4 +1,4 @@
-/* Display and print a basic type definition program.*/
+/* Display and print multiple type definition programs.*/
 
 #include <stdio.h>
 
