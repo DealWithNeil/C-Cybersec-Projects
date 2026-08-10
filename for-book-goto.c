@@ -1,4 +1,4 @@
-/* Display and print multiple type definition programs.*/
+/* Display and print multiple type definition with portability programs.*/
 
 #include <stdio.h>
 
