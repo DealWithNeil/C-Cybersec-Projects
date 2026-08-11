@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    printf("Hello, World!\n");
-    
+    int students[20];
+    printf("%zu", sizeof(students)); // 80 bytes 
     return 0;
 }
