@@ -1,14 +1,10 @@
-/* Display and print multiple type definition with portability programs.*/
+/* Display and print a basic memory allocator program.*/
 
 #include <stdio.h>
 
 int main(void)
 {
-    typedef int Quantity;
-    Quantity apples = 10;
-    printf("The value of apples is: %d\n", apples);
-
+    printf("Hello, World!\n");
     
-
     return 0;
 }
