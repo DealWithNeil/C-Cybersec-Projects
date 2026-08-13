@@ -1,15 +1,24 @@
-/* Display and print a large program.*/
+/* Display and print a basic structure variable program.*/
 
 #include <stdio.h>
 
+#define NAME_LEN 25
+
 int main(void)
 {
-    int students[20];
-    printf("%zu", sizeof(students)); // 80 bytes 
+    /* Anonymous struct definition declaring two variables: part1 and part2 */
+    struct {
+        int number;
+        char name[NAME_LEN + 1];
+        int on_hand;
+    } part1, part2;
 
-    int *ptr = (int *)malloc(20 * sizeof(int));
-    int *ptr2 = (int *)calloc(20, sizeof(int));
-    
-    
+    /* Example initialization / usage */
+    part1.number = 101;
+    part1.on_hand = 50;
+
+    printf("Part 1 Number: %d\n", part1.number);
+    printf("Part 1 On Hand: %d\n", part1.on_hand);
+
     return 0;
 }
