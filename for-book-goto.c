@@ -1,4 +1,4 @@
-/* Display and print multiple memory allocator programs.*/
+/* Display and print a large program.*/
 
 #include <stdio.h>
 
