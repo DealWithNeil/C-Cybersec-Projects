@@ -1,41 +1,44 @@
 /* Display and print a basic structure variable program using anonymous structures pt2.*/
 
 #include <stdio.h>
-
-#include <stdio.h>
 #include <string.h>
 
-#define MAX_NAME_LEN 50
+#define MAX_TITLE_LEN 60
 
 int main(void)
 {
-    /* Anonymous struct definition declaring two variables: emp1 and emp2 */
+    /* Anonymous struct defining two book variables: book1 and book2 */
     struct {
-        int employee_id;
-        char name[MAX_NAME_LEN + 1];
-        float salary;
-    } emp1, emp2;
+        int catalog_id;
+        char title[MAX_TITLE_LEN + 1];
+        float price;
+        int in_stock;
+    } book1, book2;
 
-    /* Initializing emp1 */
-    emp1.employee_id = 4051;
-    strcpy(emp1.name, "Alice Smith");
-    emp1.salary = 75500.50;
+    /* Initializing book1 */
+    book1.catalog_id = 1001;
+    strcpy(book1.title, "The C Programming Language");
+    book1.price = 49.99;
+    book1.in_stock = 15;
 
-    /* Initializing emp2 */
-    emp2.employee_id = 4052;
-    strcpy(emp2.name, "Bob Jones");
-    emp2.salary = 68000.00;
+    /* Initializing book2 */
+    book2.catalog_id = 1002;
+    strcpy(book2.title, "C Programming: A Modern Approach");
+    book2.price = 78.50;
+    book2.in_stock = 8;
 
-    /* Printing the data */
-    printf("--- Employee 1 ---\n");
-    printf("ID: %d\n", emp1.employee_id);
-    printf("Name: %s\n", emp1.name);
-    printf("Salary: $%.2f\n\n", emp1.salary);
+    /* Printing book details */
+    printf("=== Book 1 Details ===\n");
+    printf("Catalog ID:     %d\n", book1.catalog_id);
+    printf("Title:          %s\n", book1.title);
+    printf("Price:          $%.2f\n", book1.price);
+    printf("Stock Quantity: %d\n\n", book1.in_stock);
 
-    printf("--- Employee 2 ---\n");
-    printf("ID: %d\n", emp2.employee_id);
-    printf("Name: %s\n", emp2.name);
-    printf("Salary: $%.2f\n", emp2.salary);
+    printf("=== Book 2 Details ===\n");
+    printf("Catalog ID:     %d\n", book2.catalog_id);
+    printf("Title:          %s\n", book2.title);
+    printf("Price:          $%.2f\n", book2.price);
+    printf("Stock Quantity: %d\n", book2.in_stock);
 
     return 0;
 }
