@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program using anonymous structures.*/
+/* Display and print a basic structure variable program using anonymous structures pt2.*/
 
 #include <stdio.h>
 
