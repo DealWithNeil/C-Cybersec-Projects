@@ -3,42 +3,33 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_TITLE_LEN 60
+#define NAME_LEN 25
 
 int main(void)
 {
-    /* Anonymous struct defining two book variables: book1 and book2 */
+    /* Anonymous struct definition with initial values */
     struct {
-        int catalog_id;
-        char title[MAX_TITLE_LEN + 1];
-        float price;
-        int in_stock;
-    } book1, book2;
+        int number;
+        char name[NAME_LEN + 1];
+        int on_hand;
+    } part1 = {528, "Disk drive", 10},
+      part2 = {914, "Printer cable", 5};
 
-    /* Initializing book1 */
-    book1.catalog_id = 1001;
-    strcpy(book1.title, "The C Programming Language");
-    book1.price = 49.99;
-    book1.in_stock = 15;
+    /* Modifying struct members */
+    part1.on_hand += 15;                         /* Increase stock count */
+    part2.number = 915;                          /* Update catalog number */
+    strcpy(part2.name, "High-Speed Printer Cable"); /* Update string member */
 
-    /* Initializing book2 */
-    book2.catalog_id = 1002;
-    strcpy(book2.title, "C Programming: A Modern Approach");
-    book2.price = 78.50;
-    book2.in_stock = 8;
+    /* Printing modified values */
+    printf("=== Part 1 (Modified) ===\n");
+    printf("Number:  %d\n", part1.number);
+    printf("Name:    %s\n", part1.name);
+    printf("On Hand: %d\n\n", part1.on_hand);
 
-    /* Printing book details */
-    printf("=== Book 1 Details ===\n");
-    printf("Catalog ID:     %d\n", book1.catalog_id);
-    printf("Title:          %s\n", book1.title);
-    printf("Price:          $%.2f\n", book1.price);
-    printf("Stock Quantity: %d\n\n", book1.in_stock);
-
-    printf("=== Book 2 Details ===\n");
-    printf("Catalog ID:     %d\n", book2.catalog_id);
-    printf("Title:          %s\n", book2.title);
-    printf("Price:          $%.2f\n", book2.price);
-    printf("Stock Quantity: %d\n", book2.in_stock);
+    printf("=== Part 2 (Modified) ===\n");
+    printf("Number:  %d\n", part2.number);
+    printf("Name:    %s\n", part2.name);
+    printf("On Hand: %d\n", part2.on_hand);
 
     return 0;
 }
