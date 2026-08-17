@@ -7,29 +7,23 @@
 
 int main(void)
 {
-    /* Anonymous struct definition with initial values */
+    /* Anonymous struct definition declaring variable part1 */
     struct {
         int number;
         char name[NAME_LEN + 1];
         int on_hand;
-    } part1 = {528, "Disk drive", 10},
-      part2 = {914, "Printer cable", 5};
+    } part1;
 
-    /* Modifying struct members */
-    part1.on_hand += 15;                         /* Increase stock count */
-    part2.number = 915;                          /* Update catalog number */
-    strcpy(part2.name, "High-Speed Printer Cable"); /* Update string member */
+    /* Assigning values to part1 members */
+    part1.number = 204;
+    strcpy(part1.name, "Solid State Drive");
+    part1.on_hand = 12;
 
-    /* Printing modified values */
-    printf("=== Part 1 (Modified) ===\n");
-    printf("Number:  %d\n", part1.number);
-    printf("Name:    %s\n", part1.name);
-    printf("On Hand: %d\n\n", part1.on_hand);
-
-    printf("=== Part 2 (Modified) ===\n");
-    printf("Number:  %d\n", part2.number);
-    printf("Name:    %s\n", part2.name);
-    printf("On Hand: %d\n", part2.on_hand);
+    /* Printing the contents of part1 */
+    printf("=== Part Information ===\n");
+    printf("Part Number: %d\n", part1.number);
+    printf("Part Name:   %s\n", part1.name);
+    printf("Quantity:    %d\n", part1.on_hand);
 
     return 0;
 }
