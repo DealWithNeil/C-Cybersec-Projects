@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program using anonymous structures pt4.*/
+/* Display and print a basic structure variable program: different data types and macro name is updated.*/
 
 #include <stdio.h>
 #include <string.h>
