@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define NAME_LEN 25
+#define MODEL_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct definition declaring variable part1 */
+    /* Anonymous struct declaring variable car1 */
     struct {
-        int number;
-        char name[NAME_LEN + 1];
-        int on_hand;
-    } part1;
+        int year;
+        char model[MODEL_LEN + 1];
+        double price;
+    } car1;
 
-    /* Assigning values to part1 members */
-    part1.number = 204;
-    strcpy(part1.name, "Solid State Drive");
-    part1.on_hand = 12;
+    /* Assigning values to car1 members */
+    car1.year = 2024;
+    strcpy(car1.model, "Cyber Coupe");
+    car1.price = 45990.50;
 
-    /* Printing the contents of part1 */
-    printf("=== Part Information ===\n");
-    printf("Part Number: %d\n", part1.number);
-    printf("Part Name:   %s\n", part1.name);
-    printf("Quantity:    %d\n", part1.on_hand);
+    /* Printing the contents of car1 */
+    printf("=== Vehicle Information ===\n");
+    printf("Model Year: %d\n", car1.year);
+    printf("Model Name: %s\n", car1.model);
+    printf("Price:      $%.2f\n", car1.price);
 
     return 0;
 }
