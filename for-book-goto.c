@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program: different data types and macro name is updated.*/
+/* Display and print a basic structure variable program: direct member access and string memory copy.*/
 
 #include <stdio.h>
 #include <string.h>
