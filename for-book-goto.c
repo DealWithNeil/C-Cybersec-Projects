@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MODEL_LEN 30
+#define DEST_LEN 40
 
 int main(void)
 {
-    /* Anonymous struct declaring variable car1 */
+    /* Anonymous struct declaring variable flight1 */
     struct {
-        int year;
-        char model[MODEL_LEN + 1];
-        double price;
-    } car1;
+        int flight_number;
+        char destination[DEST_LEN + 1];
+        double ticket_price;
+    } flight1;
 
-    /* Assigning values to car1 members */
-    car1.year = 2024;
-    strcpy(car1.model, "Cyber Coupe");
-    car1.price = 45990.50;
+    /* Assigning values to flight1 members */
+    flight1.flight_number = 742;
+    strcpy(flight1.destination, "Tokyo (Haneda)");
+    flight1.ticket_price = 680.75;
 
-    /* Printing the contents of car1 */
-    printf("=== Vehicle Information ===\n");
-    printf("Model Year: %d\n", car1.year);
-    printf("Model Name: %s\n", car1.model);
-    printf("Price:      $%.2f\n", car1.price);
+    /* Printing the contents of flight1 */
+    printf("=== Flight Details ===\n");
+    printf("Flight Number: PR%d\n", flight1.flight_number);
+    printf("Destination:   %s\n", flight1.destination);
+    printf("Ticket Price:  $%.2f\n", flight1.ticket_price);
 
     return 0;
 }
