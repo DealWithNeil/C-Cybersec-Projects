@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program: direct member access and string memory copy.*/
+/* Display and print a basic structure variable program: direct field access and format specifier.*/
 
 #include <stdio.h>
 #include <string.h>
