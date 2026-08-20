@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define DEST_LEN 40
+#define TITLE_LEN 50
 
 int main(void)
 {
-    /* Anonymous struct declaring variable flight1 */
+    /* Anonymous struct declaring variable movie1 */
     struct {
-        int flight_number;
-        char destination[DEST_LEN + 1];
-        double ticket_price;
-    } flight1;
+        int release_year;
+        char title[TITLE_LEN + 1];
+        double rating;
+    } movie1;
 
-    /* Assigning values to flight1 members */
-    flight1.flight_number = 742;
-    strcpy(flight1.destination, "Tokyo (Haneda)");
-    flight1.ticket_price = 680.75;
+    /* Assigning values to movie1 members */
+    movie1.release_year = 2014;
+    strcpy(movie1.title, "Interstellar");
+    movie1.rating = 8.7;
 
-    /* Printing the contents of flight1 */
-    printf("=== Flight Details ===\n");
-    printf("Flight Number: PR%d\n", flight1.flight_number);
-    printf("Destination:   %s\n", flight1.destination);
-    printf("Ticket Price:  $%.2f\n", flight1.ticket_price);
+    /* Printing the contents of movie1 */
+    printf("=== Movie Details ===\n");
+    printf("Release Year: %d\n", movie1.release_year);
+    printf("Title:        %s\n", movie1.title);
+    printf("IMDb Rating:  %.1f/10\n", movie1.rating);
 
     return 0;
 }
