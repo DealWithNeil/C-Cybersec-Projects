@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TITLE_LEN 50
+#define ARTIST_LEN 40
 
 int main(void)
 {
-    /* Anonymous struct declaring variable movie1 */
+    /* Anonymous struct declaring variable track1 */
     struct {
-        int release_year;
-        char title[TITLE_LEN + 1];
-        double rating;
-    } movie1;
+        int track_number;
+        char artist[ARTIST_LEN + 1];
+        double duration_minutes;
+    } track1;
 
-    /* Assigning values to movie1 members */
-    movie1.release_year = 2014;
-    strcpy(movie1.title, "Interstellar");
-    movie1.rating = 8.7;
+    /* Assigning values to track1 members */
+    track1.track_number = 4;
+    strcpy(track1.artist, "Miles Davis");
+    track1.duration_minutes = 9.37;
 
-    /* Printing the contents of movie1 */
-    printf("=== Movie Details ===\n");
-    printf("Release Year: %d\n", movie1.release_year);
-    printf("Title:        %s\n", movie1.title);
-    printf("IMDb Rating:  %.1f/10\n", movie1.rating);
+    /* Printing the contents of track1 */
+    printf("=== Music Track Details ===\n");
+    printf("Track Number: %d\n", track1.track_number);
+    printf("Artist:       %s\n", track1.artist);
+    printf("Duration:     %.2f mins\n", track1.duration_minutes);
 
     return 0;
 }
