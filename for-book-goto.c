@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program: direct field access and format specifier.*/
+/* Display and print a basic structure variable program:domain and context, macro name and value, variable name, print formatting.*/
 
 #include <stdio.h>
 #include <string.h>
