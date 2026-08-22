@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ARTIST_LEN 40
+#define COURSE_LEN 35
 
 int main(void)
 {
-    /* Anonymous struct declaring variable track1 */
+    /* Anonymous struct declaring variable course1 */
     struct {
-        int track_number;
-        char artist[ARTIST_LEN + 1];
-        double duration_minutes;
-    } track1;
+        int course_code;
+        char course_name[COURSE_LEN + 1];
+        double credit_hours;
+    } course1;
 
-    /* Assigning values to track1 members */
-    track1.track_number = 4;
-    strcpy(track1.artist, "Miles Davis");
-    track1.duration_minutes = 9.37;
+    /* Assigning values to course1 members */
+    course1.course_code = 101;
+    strcpy(course1.course_name, "Data Structures & Algorithms");
+    course1.credit_hours = 3.5;
 
-    /* Printing the contents of track1 */
-    printf("=== Music Track Details ===\n");
-    printf("Track Number: %d\n", track1.track_number);
-    printf("Artist:       %s\n", track1.artist);
-    printf("Duration:     %.2f mins\n", track1.duration_minutes);
+    /* Printing the contents of course1 */
+    printf("=== Academic Course Details ===\n");
+    printf("Course Code:  CS%d\n", course1.course_code);
+    printf("Course Name:  %s\n", course1.course_name);
+    printf("Credit Hours: %.1f hrs\n", course1.credit_hours);
 
     return 0;
 }
