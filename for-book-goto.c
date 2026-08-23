@@ -1,4 +1,5 @@
-/* Display and print a basic structure variable program: updated the domain and context, macro name and value, variable name, print formatting.*/
+/* Display and print a basic structure variable program: updated the domain and context,
+ macro name and value, variable name, print formatting for weather report.*/
 
 #include <stdio.h>
 #include <string.h>
