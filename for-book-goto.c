@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define COURSE_LEN 35
+#define CITY_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct declaring variable course1 */
+    /* Anonymous struct declaring variable weather1 */
     struct {
-        int course_code;
-        char course_name[COURSE_LEN + 1];
-        double credit_hours;
-    } course1;
+        int humidity_percent;
+        char city_name[CITY_LEN + 1];
+        double temperature_celsius;
+    } weather1;
 
-    /* Assigning values to course1 members */
-    course1.course_code = 101;
-    strcpy(course1.course_name, "Data Structures & Algorithms");
-    course1.credit_hours = 3.5;
+    /* Assigning values to weather1 members */
+    weather1.humidity_percent = 78;
+    strcpy(weather1.city_name, "San Francisco");
+    weather1.temperature_celsius = 18.4;
 
-    /* Printing the contents of course1 */
-    printf("=== Academic Course Details ===\n");
-    printf("Course Code:  CS%d\n", course1.course_code);
-    printf("Course Name:  %s\n", course1.course_name);
-    printf("Credit Hours: %.1f hrs\n", course1.credit_hours);
+    /* Printing the contents of weather1 */
+    printf("=== Weather Report ===\n");
+    printf("City Name:   %s\n", weather1.city_name);
+    printf("Temperature: %.1f°C\n", weather1.temperature_celsius);
+    printf("Humidity:    %d%%\n", weather1.humidity_percent);
 
     return 0;
 }
