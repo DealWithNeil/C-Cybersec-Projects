@@ -1,5 +1,5 @@
-/* Display and print a basic structure variable program: updated the domain and context,
- macro name and value, variable name, print formatting for weather report.*/
+/* Display and print a basic structure variable program: Update domain from weather report to subscription tier,
+Rename fields to duration_months, package_name, and monthly_fee.*/
 
 #include <stdio.h>
 #include <string.h>
