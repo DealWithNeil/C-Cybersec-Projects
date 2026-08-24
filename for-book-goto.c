@@ -4,27 +4,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CITY_LEN 30
+#define PACK_LEN 25
 
 int main(void)
 {
-    /* Anonymous struct declaring variable weather1 */
+    /* Anonymous struct declaring variable subscription1 */
     struct {
-        int humidity_percent;
-        char city_name[CITY_LEN + 1];
-        double temperature_celsius;
-    } weather1;
+        int duration_months;
+        char package_name[PACK_LEN + 1];
+        double monthly_fee;
+    } subscription1;
 
-    /* Assigning values to weather1 members */
-    weather1.humidity_percent = 78;
-    strcpy(weather1.city_name, "San Francisco");
-    weather1.temperature_celsius = 18.4;
+    /* Assigning values to subscription1 members */
+    subscription1.duration_months = 12;
+    strcpy(subscription1.package_name, "Premium Family Tier");
+    subscription1.monthly_fee = 19.99;
 
-    /* Printing the contents of weather1 */
-    printf("=== Weather Report ===\n");
-    printf("City Name:   %s\n", weather1.city_name);
-    printf("Temperature: %.1f°C\n", weather1.temperature_celsius);
-    printf("Humidity:    %d%%\n", weather1.humidity_percent);
+    /* Printing the contents of subscription1 */
+    printf("=== Subscription Details ===\n");
+    printf("Package Name: %s\n", subscription1.package_name);
+    printf("Duration:     %d months\n", subscription1.duration_months);
+    printf("Monthly Fee:  $%.2f/mo\n", subscription1.monthly_fee);
 
     return 0;
 }
