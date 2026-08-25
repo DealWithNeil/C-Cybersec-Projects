@@ -1,5 +1,4 @@
-/* Display and print a basic structure variable program: Update domain from weather report to subscription tier,
-Rename fields to duration_months, package_name, and monthly_fee.*/
+/* Display and print a basic structure variable program: add conference event example using anonymous struct.*/
 
 #include <stdio.h>
 #include <string.h>
