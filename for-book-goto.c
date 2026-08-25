@@ -4,27 +4,27 @@ Rename fields to duration_months, package_name, and monthly_fee.*/
 #include <stdio.h>
 #include <string.h>
 
-#define PACK_LEN 25
+#define EVENT_LEN 40
 
 int main(void)
 {
-    /* Anonymous struct declaring variable subscription1 */
+    /* Anonymous struct declaring variable conference1 */
     struct {
-        int duration_months;
-        char package_name[PACK_LEN + 1];
-        double monthly_fee;
-    } subscription1;
+        int attendee_count;
+        char event_name[EVENT_LEN + 1];
+        double ticket_cost;
+    } conference1;
 
-    /* Assigning values to subscription1 members */
-    subscription1.duration_months = 12;
-    strcpy(subscription1.package_name, "Premium Family Tier");
-    subscription1.monthly_fee = 19.99;
+    /* Assigning values to conference1 members */
+    conference1.attendee_count = 1500;
+    strcpy(conference1.event_name, "Tech Summit 2026");
+    conference1.ticket_cost = 299.50;
 
-    /* Printing the contents of subscription1 */
-    printf("=== Subscription Details ===\n");
-    printf("Package Name: %s\n", subscription1.package_name);
-    printf("Duration:     %d months\n", subscription1.duration_months);
-    printf("Monthly Fee:  $%.2f/mo\n", subscription1.monthly_fee);
+    /* Printing the contents of conference1 */
+    printf("=== Conference Information ===\n");
+    printf("Event Name:     %s\n", conference1.event_name);
+    printf("Expected Group: %d attendees\n", conference1.attendee_count);
+    printf("Ticket Cost:    $%.2f\n", conference1.ticket_cost);
 
     return 0;
 }
