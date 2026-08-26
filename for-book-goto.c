@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define EVENT_LEN 40
+#define DISH_LEN 35
 
 int main(void)
 {
-    /* Anonymous struct declaring variable conference1 */
+    /* Anonymous struct declaring variable order1 */
     struct {
-        int attendee_count;
-        char event_name[EVENT_LEN + 1];
-        double ticket_cost;
-    } conference1;
+        int table_number;
+        char dish_name[DISH_LEN + 1];
+        double price;
+    } order1;
 
-    /* Assigning values to conference1 members */
-    conference1.attendee_count = 1500;
-    strcpy(conference1.event_name, "Tech Summit 2026");
-    conference1.ticket_cost = 299.50;
+    /* Assigning values to order1 members */
+    order1.table_number = 12;
+    strcpy(order1.dish_name, "Truffle Mushroom Risotto");
+    order1.price = 24.50;
 
-    /* Printing the contents of conference1 */
-    printf("=== Conference Information ===\n");
-    printf("Event Name:     %s\n", conference1.event_name);
-    printf("Expected Group: %d attendees\n", conference1.attendee_count);
-    printf("Ticket Cost:    $%.2f\n", conference1.ticket_cost);
+    /* Printing the contents of order1 */
+    printf("=== Restaurant Order Details ===\n");
+    printf("Table Number: %d\n", order1.table_number);
+    printf("Dish Name:    %s\n", order1.dish_name);
+    printf("Price:        $%.2f\n", order1.price);
 
     return 0;
 }
