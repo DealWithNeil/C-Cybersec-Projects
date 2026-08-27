@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define DISH_LEN 35
+#define ASSET_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct declaring variable order1 */
+    /* Anonymous struct declaring variable gadget1 */
     struct {
-        int table_number;
-        char dish_name[DISH_LEN + 1];
-        double price;
-    } order1;
+        int warranty_months;
+        char asset_tag[ASSET_LEN + 1];
+        double replacement_cost;
+    } gadget1;
 
-    /* Assigning values to order1 members */
-    order1.table_number = 12;
-    strcpy(order1.dish_name, "Truffle Mushroom Risotto");
-    order1.price = 24.50;
+    /* Assigning values to gadget1 members */
+    gadget1.warranty_months = 24;
+    strcpy(gadget1.asset_tag, "Dell XPS 15 Laptop");
+    gadget1.replacement_cost = 1799.99;
 
-    /* Printing the contents of order1 */
-    printf("=== Restaurant Order Details ===\n");
-    printf("Table Number: %d\n", order1.table_number);
-    printf("Dish Name:    %s\n", order1.dish_name);
-    printf("Price:        $%.2f\n", order1.price);
+    /* Printing the contents of gadget1 */
+    printf("=== IT Asset Details ===\n");
+    printf("Asset Tag:    %s\n", gadget1.asset_tag);
+    printf("Warranty:     %d months\n", gadget1.warranty_months);
+    printf("Value:        $%.2f\n", gadget1.replacement_cost);
 
     return 0;
 }
