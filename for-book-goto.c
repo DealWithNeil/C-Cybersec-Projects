@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define AUTHOR_LEN 40
+#define PLANET_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct declaring variable book1 */
+    /* Anonymous struct declaring variable body1 */
     struct {
-        int page_count;
-        char author[AUTHOR_LEN + 1];
-        double retail_price;
-    } book1;
+        int moon_count;
+        char planet_name[PLANET_LEN + 1];
+        double distance_from_sun_au;
+    } body1;
 
-    /* Assigning values to book1 members */
-    book1.page_count = 416;
-    strcpy(book1.author, "George Orwell");
-    book1.retail_price = 14.99;
+    /* Assigning values to body1 members */
+    body1.moon_count = 95;
+    strcpy(body1.planet_name, "Jupiter");
+    body1.distance_from_sun_au = 5.20;
 
-    /* Printing the contents of book1 */
-    printf("=== Book Catalog Information ===\n");
-    printf("Author:       %s\n", book1.author);
-    printf("Page Count:   %d pages\n", book1.page_count);
-    printf("Retail Price: $%.2f\n", book1.retail_price);
+    /* Printing the contents of body1 */
+    printf("=== Astronomical Data ===\n");
+    printf("Planet Name: %s\n", body1.planet_name);
+    printf("Moons:       %d\n", body1.moon_count);
+    printf("Distance:    %.2f AU\n", body1.distance_from_sun_au);
 
     return 0;
 }
