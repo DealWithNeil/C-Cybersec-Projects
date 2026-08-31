@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define EXERCISE_LEN 35
+#define ANIMAL_LEN 35
 
 int main(void)
 {
-    /* Anonymous struct declaring variable workout1 */
+    /* Anonymous struct declaring variable exhibit1 */
     struct {
-        int set_count;
-        char exercise_name[EXERCISE_LEN + 1];
-        double weight_kg;
-    } workout1;
+        int enclosure_id;
+        char animal_species[ANIMAL_LEN + 1];
+        double daily_food_kg;
+    } exhibit1;
 
-    /* Assigning values to workout1 members */
-    workout1.set_count = 4;
-    strcpy(workout1.exercise_name, "Barbell Bench Press");
-    workout1.weight_kg = 82.5;
+    /* Assigning values to exhibit1 members */
+    exhibit1.enclosure_id = 104;
+    strcpy(exhibit1.animal_species, "Bengal Tiger");
+    exhibit1.daily_food_kg = 6.50;
 
-    /* Printing the contents of workout1 */
-    printf("=== Fitness Log Details ===\n");
-    printf("Exercise: %s\n", workout1.exercise_name);
-    printf("Sets:     %d\n", workout1.set_count);
-    printf("Weight:   %.1f kg\n", workout1.weight_kg);
+    /* Printing the contents of exhibit1 */
+    printf("=== Zoo Exhibit Record ===\n");
+    printf("Species:      %s\n", exhibit1.animal_species);
+    printf("Enclosure ID: #%d\n", exhibit1.enclosure_id);
+    printf("Daily Food:   %.2f kg\n", exhibit1.daily_food_kg);
 
     return 0;
 }
