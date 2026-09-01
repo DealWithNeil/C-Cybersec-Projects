@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define ANIMAL_LEN 35
+#define DRINK_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct declaring variable exhibit1 */
+    /* Anonymous struct declaring variable beverage1 */
     struct {
-        int enclosure_id;
-        char animal_species[ANIMAL_LEN + 1];
-        double daily_food_kg;
-    } exhibit1;
+        int calories;
+        char drink_name[DRINK_LEN + 1];
+        double size_ounces;
+    } beverage1;
 
-    /* Assigning values to exhibit1 members */
-    exhibit1.enclosure_id = 104;
-    strcpy(exhibit1.animal_species, "Bengal Tiger");
-    exhibit1.daily_food_kg = 6.50;
+    /* Assigning values to beverage1 members */
+    beverage1.calories = 190;
+    strcpy(beverage1.drink_name, "Iced Matcha Latte");
+    beverage1.size_ounces = 16.0;
 
-    /* Printing the contents of exhibit1 */
-    printf("=== Zoo Exhibit Record ===\n");
-    printf("Species:      %s\n", exhibit1.animal_species);
-    printf("Enclosure ID: #%d\n", exhibit1.enclosure_id);
-    printf("Daily Food:   %.2f kg\n", exhibit1.daily_food_kg);
+    /* Printing the contents of beverage1 */
+    printf("=== Cafe Menu Item ===\n");
+    printf("Item Name: %s\n", beverage1.drink_name);
+    printf("Size:      %.1f oz\n", beverage1.size_ounces);
+    printf("Calories:  %d kcal\n", beverage1.calories);
 
     return 0;
 }
