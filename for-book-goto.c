@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define HOTEL_LEN 40
+#define SENSOR_LEN 35
 
 int main(void)
 {
-    /* Anonymous struct declaring variable booking1 */
+    /* Anonymous struct declaring variable read1 */
     struct {
-        int nights_stayed;
-        char hotel_name[HOTEL_LEN + 1];
-        double total_cost;
-    } booking1;
+        int sensor_id;
+        char sensor_type[SENSOR_LEN + 1];
+        double pressure_psi;
+    } read1;
 
-    /* Assigning values to booking1 members */
-    booking1.nights_stayed = 5;
-    strcpy(booking1.hotel_name, "Grand Hyatt Regency");
-    booking1.total_cost = 1125.50;
+    /* Assigning values to read1 members */
+    read1.sensor_id = 402;
+    strcpy(read1.sensor_type, "Pneumatic Pressure Transducer");
+    read1.pressure_psi = 45.85;
 
-    /* Printing the contents of booking1 */
-    printf("=== Hotel Reservation Details ===\n");
-    printf("Hotel Name: %s\n", booking1.hotel_name);
-    printf("Duration:   %d nights\n", booking1.nights_stayed);
-    printf("Total Cost: $%.2f\n", booking1.total_cost);
+    /* Printing the contents of read1 */
+    printf("=== IoT Sensor Telemetry ===\n");
+    printf("Sensor ID:   #%d\n", read1.sensor_id);
+    printf("Type:        %s\n", read1.sensor_type);
+    printf("Reading:     %.2f PSI\n", read1.pressure_psi);
 
     return 0;
 }
