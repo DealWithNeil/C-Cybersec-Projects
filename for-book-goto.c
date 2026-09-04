@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CARRIER_LEN 30
+#define HOTEL_LEN 40
 
 int main(void)
 {
-    /* Anonymous struct declaring variable shipment1 */
+    /* Anonymous struct declaring variable booking1 */
     struct {
-        int delivery_days;
-        char carrier_name[CARRIER_LEN + 1];
-        double weight_lbs;
-    } shipment1;
+        int nights_stayed;
+        char hotel_name[HOTEL_LEN + 1];
+        double total_cost;
+    } booking1;
 
-    /* Assigning values to shipment1 members */
-    shipment1.delivery_days = 3;
-    strcpy(shipment1.carrier_name, "FedEx Express");
-    shipment1.weight_lbs = 12.4;
+    /* Assigning values to booking1 members */
+    booking1.nights_stayed = 5;
+    strcpy(booking1.hotel_name, "Grand Hyatt Regency");
+    booking1.total_cost = 1125.50;
 
-    /* Printing the contents of shipment1 */
-    printf("=== Package Shipment Record ===\n");
-    printf("Carrier:       %s\n", shipment1.carrier_name);
-    printf("Weight:        %.1f lbs\n", shipment1.weight_lbs);
-    printf("Delivery Time: %d days\n", shipment1.delivery_days);
+    /* Printing the contents of booking1 */
+    printf("=== Hotel Reservation Details ===\n");
+    printf("Hotel Name: %s\n", booking1.hotel_name);
+    printf("Duration:   %d nights\n", booking1.nights_stayed);
+    printf("Total Cost: $%.2f\n", booking1.total_cost);
 
     return 0;
 }
