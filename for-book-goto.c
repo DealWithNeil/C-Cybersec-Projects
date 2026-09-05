@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program: add IoT sensor telemetry example using anonymous struct.*/
+/* Display and print a basic structure variable program: add train pass record example using anonymous struct.*/
 
 #include <stdio.h>
 #include <string.h>
