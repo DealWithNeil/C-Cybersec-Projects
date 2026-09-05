@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SENSOR_LEN 35
+#define STATION_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct declaring variable read1 */
+    /* Anonymous struct declaring variable transit1 */
     struct {
-        int sensor_id;
-        char sensor_type[SENSOR_LEN + 1];
-        double pressure_psi;
-    } read1;
+        int platform_number;
+        char station_name[STATION_LEN + 1];
+        double ticket_fare;
+    } transit1;
 
-    /* Assigning values to read1 members */
-    read1.sensor_id = 402;
-    strcpy(read1.sensor_type, "Pneumatic Pressure Transducer");
-    read1.pressure_psi = 45.85;
+    /* Assigning values to transit1 members */
+    transit1.platform_number = 4;
+    strcpy(transit1.station_name, "Grand Central Terminal");
+    transit1.ticket_fare = 6.75;
 
-    /* Printing the contents of read1 */
-    printf("=== IoT Sensor Telemetry ===\n");
-    printf("Sensor ID:   #%d\n", read1.sensor_id);
-    printf("Type:        %s\n", read1.sensor_type);
-    printf("Reading:     %.2f PSI\n", read1.pressure_psi);
+    /* Printing the contents of transit1 */
+    printf("=== Train Pass Record ===\n");
+    printf("Destination: %s\n", transit1.station_name);
+    printf("Platform:    #%d\n", transit1.platform_number);
+    printf("Fare:        $%.2f\n", transit1.ticket_fare);
 
     return 0;
 }
