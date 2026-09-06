@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define STATION_LEN 30
+#define EXHIBIT_LEN 40
 
 int main(void)
 {
-    /* Anonymous struct declaring variable transit1 */
+    /* Anonymous struct declaring variable artwork1 */
     struct {
-        int platform_number;
-        char station_name[STATION_LEN + 1];
-        double ticket_fare;
-    } transit1;
+        int creation_year;
+        char title[EXHIBIT_LEN + 1];
+        double estimated_value_m;
+    } artwork1;
 
-    /* Assigning values to transit1 members */
-    transit1.platform_number = 4;
-    strcpy(transit1.station_name, "Grand Central Terminal");
-    transit1.ticket_fare = 6.75;
+    /* Assigning values to artwork1 members */
+    artwork1.creation_year = 1889;
+    strcpy(artwork1.title, "The Starry Night");
+    artwork1.estimated_value_m = 100.0;
 
-    /* Printing the contents of transit1 */
-    printf("=== Train Pass Record ===\n");
-    printf("Destination: %s\n", transit1.station_name);
-    printf("Platform:    #%d\n", transit1.platform_number);
-    printf("Fare:        $%.2f\n", transit1.ticket_fare);
+    /* Printing the contents of artwork1 */
+    printf("=== Art Museum Catalog ===\n");
+    printf("Title:           %s\n", artwork1.title);
+    printf("Year Created:    %d\n", artwork1.creation_year);
+    printf("Estimated Value: $%.1fM\n", artwork1.estimated_value_m);
 
     return 0;
 }
