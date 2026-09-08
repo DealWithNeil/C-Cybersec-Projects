@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define EXHIBIT_LEN 40
+#define CROP_LEN 30
 
 int main(void)
 {
-    /* Anonymous struct declaring variable artwork1 */
+    /* Anonymous struct declaring variable harvest1 */
     struct {
-        int creation_year;
-        char title[EXHIBIT_LEN + 1];
-        double estimated_value_m;
-    } artwork1;
+        int harvest_days;
+        char crop_type[CROP_LEN + 1];
+        double yield_tons;
+    } harvest1;
 
-    /* Assigning values to artwork1 members */
-    artwork1.creation_year = 1889;
-    strcpy(artwork1.title, "The Starry Night");
-    artwork1.estimated_value_m = 100.0;
+    /* Assigning values to harvest1 members */
+    harvest1.harvest_days = 90;
+    strcpy(harvest1.crop_type, "Heirloom Yellow Corn");
+    harvest1.yield_tons = 14.25;
 
-    /* Printing the contents of artwork1 */
-    printf("=== Art Museum Catalog ===\n");
-    printf("Title:           %s\n", artwork1.title);
-    printf("Year Created:    %d\n", artwork1.creation_year);
-    printf("Estimated Value: $%.1fM\n", artwork1.estimated_value_m);
+    /* Printing the contents of harvest1 */
+    printf("=== Farm Harvest Log ===\n");
+    printf("Crop Type:    %s\n", harvest1.crop_type);
+    printf("Growth Cycle: %d days\n", harvest1.harvest_days);
+    printf("Total Yield:  %.2f tons\n", harvest1.yield_tons);
 
     return 0;
 }
