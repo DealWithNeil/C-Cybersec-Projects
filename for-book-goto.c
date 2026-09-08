@@ -1,4 +1,4 @@
-/* Display and print a basic structure variable program: add art museum catalog example using anonymous struct.*/
+/* Display and print a basic structure variable program: add agricultural harvest log example using anonymous struct.*/
 
 #include <stdio.h>
 #include <string.h>
