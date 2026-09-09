@@ -5,24 +5,24 @@
 
 int main(void)
 {
-    /* Dynamically allocate memory for a single integer */
-    int *num = malloc(sizeof(int));
+    /* Dynamically allocate memory for a single double */
+    double *price = malloc(sizeof(double));
 
-    /* Check if the memory allocation was successful */
-    if (num == NULL) {
+    /* Check if memory allocation succeeded */
+    if (price == NULL) {
         printf("Memory allocation failed!\n");
         return 1;
     }
 
     /* Assign a value to the allocated memory */
-    *num = 42;
+    *price = 99.99;
 
     /* Print the value stored at the allocated address */
-    printf("Value: %d\n", *num);
+    printf("Price: $%.2f\n", *price);
 
     /* Free the allocated memory and reset pointer */
-    free(num);
-    num = NULL;
+    free(price);
+    price = NULL;
 
     return 0;
 }
