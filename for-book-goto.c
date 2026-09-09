@@ -3,27 +3,27 @@
 #include <stdio.h>
 #include <string.h>
 
-#define CROP_LEN 30
+#define COFFEE_LEN 35
 
 int main(void)
 {
-    /* Anonymous struct declaring variable harvest1 */
+    /* Anonymous struct declaring variable batch1 */
     struct {
-        int harvest_days;
-        char crop_type[CROP_LEN + 1];
-        double yield_tons;
-    } harvest1;
+        int roast_level;
+        char bean_origin[COFFEE_LEN + 1];
+        double bag_weight_kg;
+    } batch1;
 
-    /* Assigning values to harvest1 members */
-    harvest1.harvest_days = 90;
-    strcpy(harvest1.crop_type, "Heirloom Yellow Corn");
-    harvest1.yield_tons = 14.25;
+    /* Assigning values to batch1 members */
+    batch1.roast_level = 3;
+    strcpy(batch1.bean_origin, "Ethiopia Yirgacheffe");
+    batch1.bag_weight_kg = 2.50;
 
-    /* Printing the contents of harvest1 */
-    printf("=== Farm Harvest Log ===\n");
-    printf("Crop Type:    %s\n", harvest1.crop_type);
-    printf("Growth Cycle: %d days\n", harvest1.harvest_days);
-    printf("Total Yield:  %.2f tons\n", harvest1.yield_tons);
+    /* Printing the contents of batch1 */
+    printf("=== Coffee Roastery Batch ===\n");
+    printf("Bean Origin: %s\n", batch1.bean_origin);
+    printf("Roast Level: %d (Medium-Light)\n", batch1.roast_level);
+    printf("Batch Size:  %.2f kg\n", batch1.bag_weight_kg);
 
     return 0;
 }
