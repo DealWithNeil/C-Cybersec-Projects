@@ -1,4 +1,4 @@
-//add double heap memory allocation example using malloc and free
+//Memory allocation: add double heap memory allocation example using malloc and free
 
 #include <stdio.h>
 #include <stdlib.h>
