@@ -1,27 +1,35 @@
 //add double heap memory allocation example using malloc and free
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
-    /* Dynamically allocate memory for a single double */
-    double *price = malloc(sizeof(double));
+    /* Dynamically allocate memory for a array of 5 integers */
+    int count = 5;
+    int *scores = malloc(count * sizeof(int));
 
     /* Check if memory allocation succeeded */
-    if (price == NULL) {
+    if (scores == NULL) {
         printf("Memory allocation failed!\n");
         return 1;
     }
 
-    /* Assign a value to the allocated memory */
-    *price = 99.99;
+    /* Assign values using array indexing */
+    for (int i = 0; i < count; i++) {
+        scores[i] = (i + 1) * 10;
+    }
 
-    /* Print the value stored at the allocated address */
-    printf("Price: $%.2f\n", *price);
+    /* Print the contents of the allocated array */
+    printf("Scores: ");
+    for (int i = 0; i < count; i++) {
+        printf("%d ", scores[i]);
+    }
+    printf("\n");
 
-    /* Free the allocated memory and reset pointer */
-    free(price);
-    price = NULL;
+    /* Free the allocated memory block and reset pointer */
+    free(scores);
+    scores = NULL;
 
     return 0;
 }
