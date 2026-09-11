@@ -1,5 +1,4 @@
-//Memory allocation: add double heap memory allocation example using malloc and free
-
+//Memory allocation: add dynamic double array allocation example using malloc
 #include <stdio.h>
 #include <stdlib.h>
 
