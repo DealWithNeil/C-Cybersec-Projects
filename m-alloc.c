@@ -5,31 +5,31 @@
 
 int main(void)
 {
-    /* Dynamically allocate memory for a array of 5 integers */
-    int count = 5;
-    int *scores = malloc(count * sizeof(int));
+    /* Dynamically allocate memory for an array of 4 doubles */
+    int count = 4;
+    double *temperatures = malloc(count * sizeof(double));
 
     /* Check if memory allocation succeeded */
-    if (scores == NULL) {
+    if (temperatures == NULL) {
         printf("Memory allocation failed!\n");
         return 1;
     }
 
     /* Assign values using array indexing */
-    for (int i = 0; i < count; i++) {
-        scores[i] = (i + 1) * 10;
-    }
+    temperatures[0] = 98.6;
+    temperatures[1] = 99.1;
+    temperatures[2] = 97.8;
+    temperatures[3] = 100.4;
 
     /* Print the contents of the allocated array */
-    printf("Scores: ");
+    printf("Temperature Readings:\n");
     for (int i = 0; i < count; i++) {
-        printf("%d ", scores[i]);
+        printf("Reading %d: %.1f F\n", i + 1, temperatures[i]);
     }
-    printf("\n");
 
     /* Free the allocated memory block and reset pointer */
-    free(scores);
-    scores = NULL;
+    free(temperatures);
+    temperatures = NULL;
 
     return 0;
 }
