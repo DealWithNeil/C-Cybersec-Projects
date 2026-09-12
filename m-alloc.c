@@ -1,4 +1,4 @@
-//Memory allocation: add dynamic double array allocation example using malloc
+//Memory allocation: add dynamic string allocation example using malloc and strcpy
 
 #include <stdio.h>
 #include <stdlib.h>
