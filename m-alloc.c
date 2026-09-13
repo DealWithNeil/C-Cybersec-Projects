@@ -20,7 +20,7 @@ static uint8_t heap_arena[HEAP_SIZE];
 static Header *free_list_head = NULL;
 static bool arena_initialized = false;
 
-/* Initialize the heap arena with a single large free block */
+
 void custom_allocator_init(void)
 {
     free_list_head = (Header *)heap_arena;
