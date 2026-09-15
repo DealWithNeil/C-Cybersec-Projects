@@ -19,3 +19,19 @@ int main(void)
     prices[1] = 5.50;
     prices[2] = 24.00;
     prices[3] = 8.75;
+
+    /* Display size details and array contents */
+    printf("=== Double Array Allocation ===\n");
+    printf("Size of 1 double: %zu bytes\n", sizeof(double));
+    printf("Total memory:     %zu bytes\n\n", count * sizeof(double));
+
+    for (int i = 0; i < count; i++) {
+        printf("Price %d: $%.2f\n", i + 1, prices[i]);
+    }
+
+    /* Clean up memory */
+    free(prices);
+    prices = NULL;
+
+    return 0;
+}
