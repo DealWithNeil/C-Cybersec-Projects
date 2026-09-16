@@ -18,3 +18,19 @@ int main(void)
     scores[0] = 88.5f;
     scores[1] = 92.0f;
     scores[2] = 79.4f;
+
+    /* Display byte calculations and stored values */
+    printf("=== Float Array Allocation ===\n");
+    printf("Size of 1 float: %zu bytes\n", sizeof(float));
+    printf("Total memory:    %zu bytes\n\n", count * sizeof(float));
+
+    for (int i = 0; i < count; i++) {
+        printf("Score %d: %.1f\n", i + 1, scores[i]);
+    }
+
+    /* Release memory back to the system */
+    free(scores);
+    scores = NULL;
+
+    return 0;
+}
