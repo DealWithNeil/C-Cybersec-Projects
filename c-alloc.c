@@ -17,3 +17,15 @@ int main(void)
     printf("Number of elements: %d\n", n);
     printf("Size of 1 int:      %zu bytes\n", sizeof(int));
     printf("Total memory:       %zu bytes\n\n", n * sizeof(int));
+
+    printf("Elements immediately after allocation (guaranteed zero):\n");
+    for (int i = 0; i < n; i++) {
+        printf("a[%d] = %d\n", i, a[i]);
+    }
+
+    /* Release heap memory and reset pointer */
+    free(a);
+    a = NULL;
+
+    return 0;
+}
