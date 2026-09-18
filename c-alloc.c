@@ -21,3 +21,19 @@ int main(void)
     for (int i = 0; i < num_students; i++) {
         printf("grades[%d] = %.2f\n", i, grades[i]);
     }
+
+    /* Assign values to specific indices */
+    grades[0] = 95.5f;
+    grades[1] = 88.0f;
+
+    printf("\n=== Values After Selective Assignment ===\n");
+    for (int i = 0; i < num_students; i++) {
+        printf("grades[%d] = %.2f\n", i, grades[i]);
+    }
+
+    /* Free allocated memory and clear pointer */
+    free(grades);
+    grades = NULL;
+
+    return 0;
+}
