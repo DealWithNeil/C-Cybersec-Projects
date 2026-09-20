@@ -12,3 +12,12 @@ int main(void)
     arr = realloc(arr, 4 * sizeof(int));
     arr[2] = 30;
     arr[3] = 40;
+
+    /* Print all 4 elements */
+    printf("%d %d %d %d\n", arr[0], arr[1], arr[2], arr[3]);
+
+    /* 3. Free memory */
+    free(arr);
+
+    return 0;
+}
