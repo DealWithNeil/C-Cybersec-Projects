@@ -3,16 +3,12 @@
 
 int main(void)
 {
-    /* Allocate space for 3 integers, set to 0 */
-    int *nums = calloc(3, sizeof(int));
+    /* 1. Allocate initial memory for 2 integers */
+    int *arr = malloc(2 * sizeof(int));
+    arr[0] = 10;
+    arr[1] = 20;
 
-    /* Print default zero values */
-    printf("nums[0] = %d\n", nums[0]);
-    printf("nums[1] = %d\n", nums[1]);
-    printf("nums[2] = %d\n", nums[2]);
-
-    /* Free memory */
-    free(nums);
-
-    return 0;
-}
+    /* 2. Resize the array to hold 4 integers */
+    arr = realloc(arr, 4 * sizeof(int));
+    arr[2] = 30;
+    arr[3] = 40;
